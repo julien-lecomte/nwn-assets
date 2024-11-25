@@ -1,3 +1,3 @@
-# 2da assets
+# NWN assets
 
-Source URL: https://github.com/nwn-rs/assets
+Version: 88.8193.36-12

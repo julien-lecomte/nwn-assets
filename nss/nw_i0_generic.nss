@@ -1049,6 +1049,7 @@ void DetermineCombatRound(object oIntruder = OBJECT_INVALID, int nAI_Difficulty 
 }
 
 
+
 //::///////////////////////////////////////////////
 //:: Respond To Shouts
 //:: Copyright (c) 2001 Bioware Corp.
