@@ -12630,11 +12630,15 @@ La segunda columna muestra el nombre del conjuro.
 La tercera columna muestra el nivel de lanzamiento del conjuro. Normalmente, éste es el mismo que el nivel del conjuro; aunque, si se aplica metamagia al sortilegio, el nivel de lanzamiento de éste sí que será mayor que el nivel del conjuro.
 
 La cuarta columna muestra la cantidad que la criatura tiene preparada de un conjuro seleccionado."
+7568,,,"Clase 4"
+7569,,,"Clase 5"
+7570,,,"Clase 6"
 7571,,,"Introduce una cadena de caracteres en este campo para especificar el nombre que se dará a esta criatura durante la partida así como el nombre propio que aparecerá en la paleta.
 
 Haz clic en el botón ""..."" situado junto al campo de texto del Nombre para especificar nombres en otros idiomas."
 7572,,,"Introduce un número en el campo numérico de la CD de Abrir cerradura para especificar lo difícil que es abrir este objeto usando la habilidad de Abrir cerraduras. Un valor de cero indica que la cerradura del objeto no ha sido cerrada y que cualquiera puede abrirlo."
 7573,,,"Introduce un número para especificar lo difícil que es cerrar este objeto usando la habilidad de Abrir cerraduras. Un valor de cero indica que cualquiera puede cerrarlo."
+7574,,,"Clase 7"
 7575,,,"Selecciona una raza para esta criatura. Ésta se usa a efectos de calcular los bonificadores por enemigo predilecto y bonificadores de ataque contra raza."
 7576,,,"CD abrir cerradura"
 7577,,,"CD cerrar cerradura"
@@ -12644,6 +12648,7 @@ Haz clic en el botón ""..."" situado junto al campo de texto del Nombre para es
 El fenotipo sólo se usa para determinar qué modelo se ha de mostrar y no para ningún otro efecto, como la Raza."
 7580,,,"Selecciona un sexo para esta criatura. El sexo escogido sólo afectará a la apariencia si ésta es un modelo de jugador (enano, elfo, semielfo, mediano, humano, semiorco y gnomo). El sexo también puede afectar al diálogo con esta criatura en algunos idiomas, como el español."
 7581,,,"Esto muestra el Valor de Desafío de esta criatura. Esta cantidad indica aproximadamente el nivel necesario para que un grupo equilibrado de 4 miembros mate a esta criatura gastando sólo un 20% de sus recursos (como PG y conjuros)."
+7582,,,"Clase 8"
 7583,,,"Selecciona una conversación para esta criatura en la lista desplegable o haciendo clic en el botón ""..."".
 
 También puedes hacer clic en el botón ""Editar"" para modificar una conversación."
@@ -12684,7 +12689,7 @@ La apariencia de la criatura puede suponer un bonificador o penalizador en funci
 7603,,,"contra"
 7604,,,"Selecciona un alineamiento para esta criatura.
 Los alineamientos disponibles son: legal bueno, legal neutral, legal maligno, neutral bueno, neutral auténtico, neutral maligno, caótico bueno, caótico neutral y caótico maligno."
-7605,,,"Selecciona hasta 3 clases para esta criatura y determina los niveles para tales clases.
+7605,,,"Selecciona hasta 8 clases para esta criatura y determina los niveles para tales clases.
 
 Se requiere 1 clase al menos."
 7606,,,"Si esta criatura usa una apariencia que lo permita, puedes personalizar su aspecto seleccionando cada una de las partes del modelo."
@@ -12893,6 +12898,7 @@ Eliminar un Diseño personalizado no afecta en modo alguno a los ejemplos creado
 7725,,,"Marca esta casilla para hacer que el objeto seleccionado sea infinito. Un objeto infinito significa que la tienda nunca se quedará sin existencias de él."
 7726,,,"Tipo de objeto"
 7727,,,"Por favor, escoge el tipo de objeto que quieras crear"
+7728,,,"Herramienta de desarrollo Aurora de BioWare v%s.%s.%s-%s"
 7729,,,"< &Atrás"
 7730,,,"&Siguiente >"
 7731,,,"Finalizar"
@@ -12904,7 +12910,7 @@ Eliminar un Diseño personalizado no afecta en modo alguno a los ejemplos creado
 7737,,,"Haz clic en Siguiente para continuar"
 7738,,,"Escoge un tipo racial para tu nuevo Diseño de criatura"
 7739,,,"El tipo racial marca las características predeterminadas y la clase y apariencia de la criatura."
-7740,,,"Por favor, escoge entre 1 y 3 clases para esta criatura y selecciona un nivel para cada clase."
+7740,,,"Por favor, escoge entre 1 y 8 clases para esta criatura y selecciona un nivel para cada clase."
 7741,,,"La clase determina las habilidades y las dotes de la criatura así como cuánto difieren las características de la criatura de los valores predeterminados."
 7742,,,"Cuanto más alto sea el nivel, más habilidades y dotes tendrá la criatura y mayores serán las puntuaciones de sus características."
 7743,,,"Agregar clase"
@@ -117899,3 +117905,4 @@ URL: %s"
 112224,,,"Dis"
 112225,,,"Ooz"
 112226,,,"Prp"
+112227,,,"You cannot level up while polymorphed."

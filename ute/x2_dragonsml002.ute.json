@@ -1,0 +1,227 @@
+{
+  "__data_type": "UTE ",
+  "Active": {
+    "type": "byte",
+    "value": 1
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "CreatureList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Appearance": {
+          "type": "int",
+          "value": 375
+        },
+        "CR": {
+          "type": "float",
+          "value": 2.0
+        },
+        "ResRef": {
+          "type": "resref",
+          "value": "x0_dragon_pseudo"
+        },
+        "SingleSpawn": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Appearance": {
+          "type": "int",
+          "value": 374
+        },
+        "CR": {
+          "type": "float",
+          "value": 3.0
+        },
+        "ResRef": {
+          "type": "resref",
+          "value": "x0_dragon_faerie"
+        },
+        "SingleSpawn": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Appearance": {
+          "type": "int",
+          "value": 381
+        },
+        "CR": {
+          "type": "float",
+          "value": 5.0
+        },
+        "ResRef": {
+          "type": "resref",
+          "value": "x0_wyrmling_brs"
+        },
+        "SingleSpawn": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Appearance": {
+          "type": "int",
+          "value": 382
+        },
+        "CR": {
+          "type": "float",
+          "value": 6.0
+        },
+        "ResRef": {
+          "type": "resref",
+          "value": "x0_wyrmling_cop"
+        },
+        "SingleSpawn": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Appearance": {
+          "type": "int",
+          "value": 383
+        },
+        "CR": {
+          "type": "float",
+          "value": 7.0
+        },
+        "ResRef": {
+          "type": "resref",
+          "value": "x0_wyrmling_brz"
+        },
+        "SingleSpawn": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Appearance": {
+          "type": "int",
+          "value": 384
+        },
+        "CR": {
+          "type": "float",
+          "value": 7.0
+        },
+        "ResRef": {
+          "type": "resref",
+          "value": "x0_wyrmling_sil"
+        },
+        "SingleSpawn": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Appearance": {
+          "type": "int",
+          "value": 385
+        },
+        "CR": {
+          "type": "float",
+          "value": 8.0
+        },
+        "ResRef": {
+          "type": "resref",
+          "value": "x0_wyrmling_gld"
+        },
+        "SingleSpawn": {
+          "type": "byte",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "Difficulty": {
+    "type": "int",
+    "value": 0
+  },
+  "DifficultyIndex": {
+    "type": "int",
+    "value": 2
+  },
+  "Faction": {
+    "type": "dword",
+    "value": 2
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "id": 91342
+    }
+  },
+  "MaxCreatures": {
+    "type": "int",
+    "value": 4
+  },
+  "OnEntered": {
+    "type": "resref",
+    "value": ""
+  },
+  "OnExhausted": {
+    "type": "resref",
+    "value": ""
+  },
+  "OnExit": {
+    "type": "resref",
+    "value": ""
+  },
+  "OnHeartbeat": {
+    "type": "resref",
+    "value": ""
+  },
+  "OnUserDefined": {
+    "type": "resref",
+    "value": ""
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 7
+  },
+  "PlayerOnly": {
+    "type": "byte",
+    "value": 1
+  },
+  "RecCreatures": {
+    "type": "int",
+    "value": 2
+  },
+  "Reset": {
+    "type": "byte",
+    "value": 0
+  },
+  "ResetTime": {
+    "type": "int",
+    "value": 60
+  },
+  "Respawns": {
+    "type": "int",
+    "value": 0
+  },
+  "SpawnOption": {
+    "type": "int",
+    "value": 1
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "x2_dragonsml002"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "x2_dragonsml002"
+  }
+}

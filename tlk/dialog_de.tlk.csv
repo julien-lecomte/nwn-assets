@@ -12781,11 +12781,15 @@ Die zweite Spalte zeigt den Namen des Zaubers an.
 Die dritte Spalte zeigt die Zauberstufe des Zaubers an. Sie ist normalerweise gleich dem Zaubergrad. Wenn jedoch Metamagie auf einen Zauber angewandt wird, wird die Zauberstufe höher als der Grad des Zaubers.
 
 Die vierte Spalte zeigt an, wie oft die Kreatur den Zauber vorbereitet hat."
+7568,,,"Klasse 4"
+7569,,,"Klasse 5"
+7570,,,"Klasse 6"
 7571,,,"Geben Sie einen Text in das Feld ein, um den Vornamen festzulegen, unter dem die Kreatur im Spiel und in der Liste erscheint.
 
 Klicken Sie auf ""..."" neben dem Namensfeld, um den Namen in anderen Sprachen anzugeben."
 7572,,,"Geben Sie eine Zahl in das Feld SG für Schlösser Öffnen ein, um festzulegen, wie schwer das Objekt mittels der Fertigkeit Schlösser öffnen zu öffnen ist. Ein Wert von 0 bedeutet, dass das Objekt unverschlossen ist und jeder es öffnen kann."
 7573,,,"Geben Sie eine Zahl ein, um festzulegen, wie schwer das Objekt mittels der Fertigkeit Schlösser öffnen zu verschließen ist. Ein Wert von 0 bedeutet, dass jeder es verschließen kann."
+7574,,,"Klasse 7"
 7575,,,"Wählen Sie ein Volk für die Kreatur. Hierdurch wird der Erzfeind- und/oder Angriffsbonus gegen bestimmte Völker bestimmt."
 7576,,,"SG Schloss öffnen"
 7577,,,"SG Schloss abschl."
@@ -12795,6 +12799,7 @@ Klicken Sie auf ""..."" neben dem Namensfeld, um den Namen in anderen Sprachen a
 Der Phänotyp wird nur benutzt, um das anzuzeigende Modell auszuwählen, nicht aber, um das Volk oder andere Dinge festzulegen."
 7580,,,"Wählen Sie ein Geschlecht für die Kreatur. Das gewählte Geschlecht beeinflusst das Aussehen nur, wenn das gewählte Aussehen ein Spielermodell ist (Zwerg, Elf, Halb-Elf, Halbling, Mensch, Halb-Ork und Gnom). Das Geschlecht beeinflusst in manchen Sprachen auch die Dialoge für diese Kreatur."
 7581,,,"Hier wird der Herausforderungsgrad für diese Kreatur angezeigt. Der Wert gibt ungefähr die Stufe an, die eine ausbalancierte Gruppe von 4 Spielern braucht, um diese Kreatur zu töten, wenn sie nur 20% ihrer Ressourcen verwendet (TP und Zauber beispielsweise)."
+7582,,,"Klasse 8"
 7583,,,"Wählen Sie ein Gespräch für diese Kreatur aus der Liste, oder indem Sie ""..."" anklicken.
 
 Sie können auch auf ""Bearbeiten"" klicken, um das Gespräch zu bearbeiten."
@@ -12838,7 +12843,7 @@ Das Aussehen der Kreatur kann je nach ihrer Größe einen Bonus oder Malus geben
 7604,,,"Wählen Sie eine Gesinnung für diese Kreatur.
 
 Sie können zwischen Rechtschaffen gut, Rechtschaffen neutral, Rechtschaffen böse, Neutral gut, Neutral, Neutral böse, Chaotisch gut, Chaotisch neutral und Chaotisch böse wählen."
-7605,,,"Wählen Sie bis zu drei Klassen für diese Kreatur und legen Sie jeweils die Stufen fest.
+7605,,,"Wählen Sie bis zu acht Klassen für diese Kreatur und legen Sie jeweils die Stufen fest.
 
 Sie brauchen mindestens eine Klasse."
 7606,,,"Wenn diese Kreatur ein Aussehen hat, das diese Funktion unterstützt, dann können Sie ihre Erscheinung anpassen, indem Sie die Modelle für die Einzelteile auswählen."
@@ -13040,6 +13045,7 @@ Das Löschen einer selbst erstellten Vorlage beeinflusst schon platzierte Vorkom
 7725,,,"Markieren Sie dieses Feld, um den gewählten Gegenstand unendlich verfügbar zu machen. Das heißt, dass das Geschäft ihn immer auf Lager hat."
 7726,,,"Gegenstandsart"
 7727,,,"Bitte wählen Sie die Gegenstandsart aus, die Sie erschaffen möchten"
+7728,,,"BioWare Aurora NWN Werkzeugset v%s.%s.%s-%s"
 7729,,,"< &Zurück"
 7730,,,"&Weiter >"
 7731,,,"Beenden"
@@ -13051,7 +13057,7 @@ Das Löschen einer selbst erstellten Vorlage beeinflusst schon platzierte Vorkom
 7737,,,"Klicken Sie auf Weiter, um fortzufahren."
 7738,,,"Wählen Sie eine Gattung für Ihre neue Kreaturen-Vorlage aus."
 7739,,,"Die Gattung bestimmt die Standard-Attribute, die Klasse und das Aussehen der Kreatur."
-7740,,,"Bitte wählen Sie 1 bis 3 Klassen für diese Kreatur aus, und bestimmen Sie die Stufe jeder Klasse."
+7740,,,"Bitte wählen Sie 1 bis 8 Klassen für diese Kreatur aus, und bestimmen Sie die Stufe jeder Klasse."
 7741,,,"Die Klasse bestimmt Fertigkeiten und Talente einer Kreatur; sie bestimmt auch, wie sehr ihre Attribute von den Standardwerten abweichen."
 7742,,,"Je höher die Stufe in einer Klasse ist, desto mehr Fertigkeiten und Talente besitzt die Kreatur, und desto höher werden ihre Attribute sein."
 7743,,,"Hinzufügen"
@@ -16592,8 +16598,8 @@ Wirklich fortfahren?"
 10679,,,"V"
 10680,,,"W"
 10681,,,"X"
-10682,,,"Z"
-10683,,,"Y"
+10682,,,"Y"
+10683,,,"Z"
 10684,,,"Lokale Variablen sichten"
 10685,,,"Sicherstellen, dass der Spieler über die erforderlichen Fertigkeiten verfügt"
 10686,,,"Sicherstellen, dass der Spieler über die erforderlichen Talente verfügt"
@@ -119638,3 +119644,4 @@ URL: %s"
 112224,,,"Dis"
 112225,,,"Ooz"
 112226,,,"Prp"
+112227,,,"You cannot level up while polymorphed."

@@ -12623,11 +12623,15 @@ La seconda colonna mostra il nome dell'incantesimo.
 La terza colonna mostra il livello dell'incantatore dell'incantesimo. Normalmente questo dovrebbe essere uguale al livello dell'incantesimo. Tuttavia, se una metamagia è applicata all'incantesimo, il suo livello dell'incantatore sarà maggiore del suo livello dell'incantesimo.
 
 La quarta colonna mostra la quantità preparata dell'incantesimo selezionato."
+7568,,,"Classe 4"
+7569,,,"Classe 5"
+7570,,,"Classe 6"
 7571,,,"Digita una stringa in questo campo per specificare il nome che verrà usato per questa creatura nel gioco oltre a quello che comparirà nella tavolozza.
 
 Clicca sul pulsante ""..."" vicino al campo di testo Nome per specificare nomi in altri linguaggi."
 7572,,,"Immetti un numero nel campo numerico CD Scassinare Serrature per specificare quanto sia difficile aprire questo oggetto utilizzando l'abilità Scassinare Serrature. Il valore zero indica che questo oggetto non è chiuso a chiave e chiunque può aprirlo."
 7573,,,"Immetti un numero per specificare quanto sia difficile chiudere a chiave questo oggetto usando l'abilità Scassinare Serrature. Il valore zero indica che chiunque può chiudere a chiave questo oggetto."
+7574,,,"Classe 7"
 7575,,,"Seleziona una razza per questa creatura. Questo è usato per il calcolo del nemico preferito e/o per il bonus di attacco contro razza."
 7576,,,"CD Scassinare Serr."
 7577,,,"CD Chiudere Serr."
@@ -12637,6 +12641,7 @@ Clicca sul pulsante ""..."" vicino al campo di testo Nome per specificare nomi i
 Il fenotipo è usato solo per determinare quale modello viene utilizzato e non ha altri scopi come la razza."
 7580,,,"Seleziona il sesso di questa creatura. Il sesso scelto influenzerà l'aspetto soltanto se l'aspetto scelto è un modello da giocatore (nano, elfo, mezzelfo, halfling, umano, mezzorco e gnomo). Il sesso può anche influenzare i dialoghi per questa creatura in certi linguaggi."
 7581,,,"Questo mostra il Grado di sfida di questa creatura. Questo valore fornisce approssimativamente il livello necessario per un gruppo equilibrato di 4 membri per uccidere questa creatura impiegando soltanto il 20% delle loro risorse (come PF e incantesimi)."
+7582,,,"Classe 8"
 7583,,,"Seleziona una conversazione per questa creatura dalla lista a scomparsa o cliccando sul pulsante ""...""
 
 Puoi anche cliccare sul pulsante ""Modifica"" per modificare una conversazione."
@@ -12677,7 +12682,7 @@ L'aspetto della creatura può fornire un bonus o una penalità in base alla sua 
 7603,,,"contro"
 7604,,,"Scegli un allineamento per questa creatura.
 Gli allineamenti disponibili sono Legale Buono, Legale Neutrale, Legale Malvagio, Neutrale Buono, Neutrale, Neutrale Malvagio, Caotico Buono, Caotico Neutrale e Caotico Malvagio."
-7605,,,"Scegli fino a 3 classi per questa creatura e imposta i livelli per queste classi.
+7605,,,"Scegli fino a 8 classi per questa creatura e imposta i livelli per queste classi.
 
 È necessaria almeno una classe."
 7606,,,"Se questa creatura usa un aspetto che la supporta, puoi personalizzarlo scegliendo le parti individuali del modello."
@@ -12886,6 +12891,7 @@ La cancellazione di un progetto personalizzato non influenzerà in alcun modo le
 7725,,,"Attiva questo riquadro per rendere infinito l'oggetto selezionato. Questo significa che il negozio non finirà mai le scorte dell'oggetto selezionato."
 7726,,,"Tipo di oggetto"
 7727,,,"Scegli il tipo di oggetto che desideri creare"
+7728,,,"Gruppo Strumenti Aurora di Neverwinter Nights v%s.%s.%s-%s"
 7729,,,"<&Indietro"
 7730,,,"&Avanti>"
 7731,,,"Fine"
@@ -12897,7 +12903,7 @@ La cancellazione di un progetto personalizzato non influenzerà in alcun modo le
 7737,,,"Premere Avanti per continuare."
 7738,,,"Scegli un Tipo Razziale per il tuo nuovo progetto di creatura"
 7739,,,"Il Tipo Razziale determina le capacità standard, la classe e l'aspetto della creatura."
-7740,,,"Seleziona da 1 a 3 classi per questa creatura e seleziona il livello per ogni classe."
+7740,,,"Seleziona da 1 a 8 classi per questa creatura e seleziona il livello per ogni classe."
 7741,,,"La classe determina le abilità e i talenti che la creatura possiede oltre alle capacità della creatura diverse dai valori di default."
 7742,,,"Maggiore è il livello in una classe, più abilità e talenti avrà una creatura e più elevati saranno i suoi punteggi di caratteristica."
 7743,,,"Agg. classe"
@@ -117846,3 +117852,4 @@ URL: %s"
 112224,,,"Dis"
 112225,,,"Ooz"
 112226,,,"Prp"
+112227,,,"You cannot level up while polymorphed."

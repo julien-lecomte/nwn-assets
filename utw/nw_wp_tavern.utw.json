@@ -1,0 +1,49 @@
+{
+  "__data_type": "UTW ",
+  "Appearance": {
+    "type": "byte",
+    "value": 3
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": "This is a waypoint that can be placed in an interior area to mark it as a tavern. This will affect the animations and behavior of NPCs using the PlayAmbientAnimations functions (see the OnSpawn script nw_c2_default9 and the library x0_i0_anims for details). \r\n\r\nNote that this feature will only work in modules that use the XP1 modified AI. "
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "HasMapNote": {
+    "type": "byte",
+    "value": 0
+  },
+  "LinkedTo": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "id": 69068
+    }
+  },
+  "MapNote": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "MapNoteEnabled": {
+    "type": "byte",
+    "value": 1
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 5
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "NW_TAVERN"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "nw_wp_tavern"
+  }
+}

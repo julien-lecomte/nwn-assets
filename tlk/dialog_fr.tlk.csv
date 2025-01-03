@@ -12715,11 +12715,15 @@ Le nom du sort est indiqué dans la seconde colonne.
 Le niveau auquel sera lancé le sort est indiqué dans la troisième colonne. Normalement, il est identique au niveau du sort. Cependant, grâce à la métamagie, le niveau auquel il sera lancé sera plus élevé que le niveau du sort.
 
 Dans la quatrième colonne est indiqué, pour chaque sort, le nombre de fois qu'il a été préparé par la créature."
+7568,,,"Classe 4"
+7569,,,"Classe 5"
+7570,,,"Classe 6"
 7571,,,"Indiquez dans ce champ le prénom qui sera utilisé pour cette créature. C'est également le nom qui apparaîtra dans la palette.
 
 Cliquez sur le bouton  ""..."" à coté du champ Prénom pour choisir un prénom dans d'autres langues."
 7572,,,"Indiquez un nombre dans le champ de valeur DD Déverrouillage pour déterminer la difficulté pour ouvrir cet objet avec la compétence de Crochetage. Une valeur de 0 indique que cet objet n'est pas verrouillé et que n'importe qui peut l'ouvrir."
 7573,,,"Indiquez un nombre dans le champ de valeur DD Verrouillage pour déterminer la difficulté pour verrouiller cet objet avec la compétence de Crochetage. Une valeur de 0 indique que n'importe qui peut verrouiller cet objet."
+7574,,,"Classe 7"
 7575,,,"Choisissez une race pour cette créature. Elle servira à déterminer l'adversaire de prédilection et/ou à calculer le bonus à l'attaque contre cette race."
 7576,,,"DD Déverrouillage"
 7577,,,"DD Verrouillage"
@@ -12729,6 +12733,7 @@ Cliquez sur le bouton  ""..."" à coté du champ Prénom pour choisir un prénom
 Le phénotype ne sert qu'à déterminer le modèle à utiliser et n'a aucune autre influence."
 7580,,,"Choisissez un sexe pour cette créature. Le sexe choisi n'aura un effet sur l'apparence que si l'apparence choisie est une race jouable jouable (nain, elfe, demi-elfe, halfelin, humain, demi-orque et gnome). Le sexe peut avoir une incidence sur les dialogues dans certaines langues."
 7581,,,"Ce champ indique le Facteur de Puissance de la créature.Cette valeur indique le niveau moyen requis pour qu'un groupe équilibré de 4 joueurs triomphe de la créature en n'utilisant que 20% de ses ressources (telles que les PV et les sorts)."
+7582,,,"Classe 8"
 7583,,,"Choisissez un dialogue pour cette créature dans le menu déroulant ou en cliquant sur le bouton ""..."".
 
 Vous pouvez aussi cliquer sur le bouton Editer pour éditer un dialogue"
@@ -12769,7 +12774,7 @@ L'apparence de la créature peut engendrer un bonus ou une pénalité en fonctio
 7603,,,"vs"
 7604,,,"Choisissez un alignement pour cette créature.
 Les alignements possibles sont les suivants :  Loyal bon, Loyal neutre, Loyal mauvais, Neutre bon, Neutre, Neutre mauvais, Chaotique bon, Chaotique neutre et Chaotique mauvais."
-7605,,,"Choisissez jusqu'à 3 classes pour cette créature et déterminez le niveau de chaque classe.
+7605,,,"Choisissez jusqu'à 8 classes pour cette créature et déterminez le niveau de chaque classe.
 
 Il faut au moins choisir 1 classe."
 7606,,,"Si cette créature utilise une apparence qui peut être personnalisée, vous pouvez choisir un modèle pour chacune des parties qui la composent."
@@ -12978,6 +12983,7 @@ La suppression d'un blueprint personnalisé n'affectera pas les éléments cré�
 7725,,,"Cochez cette case pour que l'objet sélectionné soit disponible en quantité infinie. Cela signifie qu'il y en aura toujours en magasin."
 7726,,,"Type d'objet"
 7727,,,"Choisissez le type d'objet que vous voulez créer"
+7728,,,"Editeur Neverwinter Nights Bioware Aurora v%s.%s.%s-%s"
 7729,,,"< &Retour"
 7730,,,"&Suivant >"
 7731,,,"Terminer"
@@ -12989,7 +12995,7 @@ La suppression d'un blueprint personnalisé n'affectera pas les éléments cré�
 7737,,,"Cliquez sur Suivant pour continuer."
 7738,,,"Choisissez un type de race pour votre nouveau modèle de créature."
 7739,,,"Le type de race détermine les caractéristiques par défaut, la classe et l'apparence de la créature."
-7740,,,"Choisissez 1 à 3 classes pour cette créature et sélectionnez le niveau de chaque classe."
+7740,,,"Choisissez 1 à 8 classes pour cette créature et sélectionnez le niveau de chaque classe."
 7741,,,"La classe détermine les compétences et les dons de la créature, mais aussi en quoi les capacités de la créature diffèrent des valeurs par défaut."
 7742,,,"Plus le niveau est élevé, plus la créature aura de compétences et de dons, et plus ses valeurs de caractéristiques seront élevées."
 7743,,,"Ajouter"
@@ -117962,3 +117968,4 @@ URL: %s"
 112224,,,"Dis"
 112225,,,"Ooz"
 112226,,,"Prp"
+112227,,,"You cannot level up while polymorphed."

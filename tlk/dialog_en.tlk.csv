@@ -12863,11 +12863,15 @@ The second column displays the name of the spell.
 The third column displays the casting level of the spell. Normally, this would be the same as the spell's level. However, if metamagic is applied to a spell, it's casting level will actually be higher than the spell's level.
 
 The fourth column displays the number of the selected spell that this creature has prepared."
+7568,,,"Class 4"
+7569,,,"Class 5"
+7570,,,"Class 6"
 7571,,,"Type a string in this field to specify the first name that will be used for this creature in the game as well as the name that appears in the palette.
 
 Click on the ""..."" button next to the Name text field to specify names in other languages."
 7572,,,"Enter a number in the Open Lock DC number field to specify how hard it is to open this object using the Pick Locks skill. A value of zero means that this object is not locked anyone can open it."
 7573,,,"Enter a number to specify how hard it is to lock this object using the Pick Locks skill. A value of zero means that anyone can lock this object."
+7574,,,"Class 7"
 7575,,,"Select a race for this creature. This is used for preferred enemy and/or attack bonus vs race calculations."
 7576,,,"Open Lock DC"
 7577,,,"Close Lock DC"
@@ -12877,6 +12881,7 @@ Click on the ""..."" button next to the Name text field to specify names in othe
 The phenotype is used only for determining which models to use and does not have any other purpose like Race."
 7580,,,"Select a gender for this creature. The chosen gender will affect the appearance only if the chosen appearance is a player model (Dwarf, Elf, Half-Elf, Halfling, Human, Half-Orc, and Gnome). The gender can also affect the dialogue for this creature in certain languages."
 7581,,,"This displays the Challenge Rating of this creature. This value gives the approximate required level for a balanced 4 member party to kill this creature while expending only 20% of their resources (such as HP and spells)."
+7582,,,"Class 8"
 7583,,,"Select a conversation for this creature from the dropdown list or by clicking on the ""..."" button.
 
 You can also click on the ""Edit"" button to edit a conversation."
@@ -12918,7 +12923,7 @@ The creature's appearance may provide a bonus or a penalty based on it's size."
 7603,,,"vs."
 7604,,,"Select an alignment for this creature.
 Available alignments include Lawful Good, Lawful Neutral, Lawful Evil, Neutral Good, True Neutral, Neutral Evil, Chaotic Good, Chaotic Neutral, and Chaotic Evil."
-7605,,,"Select up to 3 classes for this creature and set the levels for those classes.
+7605,,,"Select up to 8 classes for this creature and set the levels for those classes.
 
 At least 1 class is required."
 7606,,,"If this creature uses an appearance that supports it, you may customize it's look by selecting the models for it's individual parts."
@@ -13130,6 +13135,7 @@ Deleting a custom Blueprint will not affect instances created from that Blueprin
 7725,,,"Check this checkbox to make the selected item infinite. This means that the store will never run out of the selected item."
 7726,,,"Item Type"
 7727,,,"Please choose the type of item you wish to create"
+7728,,,"BioWare Aurora Neverwinter Nights Toolset v%s.%s.%s-%s"
 7729,,,"< &Back"
 7730,,,"&Next >"
 7731,,,"Finish"
@@ -13141,7 +13147,7 @@ Deleting a custom Blueprint will not affect instances created from that Blueprin
 7737,,,"Click Next to continue."
 7738,,,"Choose a Racial Type for your new Creature Blueprint."
 7739,,,"The Racial Type determines the default abilities, class, and appearance of the Creature."
-7740,,,"Please choose 1 to 3 classes for this creature and select the level for each class."
+7740,,,"Please choose 1 to 8 classes for this creature and select the level for each class."
 7741,,,"The class determines the skills and feats the creature has as well as how the creature's abilities differ from the default values."
 7742,,,"The higher the level in a class, the more skills and feats the creature will have and the higher its ability scores will be."
 7743,,,"Add Class"
@@ -118654,3 +118660,4 @@ URL: %s"
 112224,,,"Dis"
 112225,,,"Ooz"
 112226,,,"Prp"
+112227,,,"You cannot level up while polymorphed."

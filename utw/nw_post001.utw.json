@@ -1,0 +1,37 @@
+{
+  "__data_type": "UTW ",
+  "Comment": {
+    "type": "cexostring",
+    "value": "This waypoint may be used to have a guard stand where it has been placed. \r\n1. Create a guard and either use the existing Tag or fill in a new one. \r\n2. Place this Waypoint with the Tag \"POST_\" + the NPC Tag.\r\n3. Place or make sure that WalkWayPoints() is within the On Spawn script for the NPC and after combat, the NPC shall return to it's \"POST\"."
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "HasMapNote": {
+    "type": "byte",
+    "value": 0
+  },
+  "LinkedTo": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "id": 14816
+    }
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 5
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "NW_POST001"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "nw_post001"
+  }
+}

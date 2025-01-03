@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -eu
+
+export PATH=./bin:"${PATH}"
+export PS4=""
+
+# In case files are removed from one version to another, clear all files
+find 2da -mindepth 1 -maxdepth 1 -type f -iname \*.2da       -delete
+find dlg -mindepth 1 -maxdepth 1 -type f -iname \*.dlg.json  -delete
+find nss -mindepth 1 -maxdepth 1 -type f -iname \*.nss       -delete
+find ut* -mindepth 1 -maxdepth 1 -type f -iname \*.ut\?.json -delete
+
+for i in ~/.local/share/Steam/steamapps/common/"Neverwinter Nights"/lang/*/data/dialog.tlk ; do
+  lang=${i#*lang/}
+  lang=${lang%/data*}
+  (set -x; nwn_tlk -i "$i" -o tlk/dialog_${lang}.tlk.csv)
+  (set -x; nwn_tlk -p -i "$i" -o tlk/dialog_${lang}.tlk.json)
+done
+
+dst=$(mktemp -d --tmpdir nwn.XXXXX)
+nwn_key_unpack -f ~/.local/share/Steam/steamapps/common/"Neverwinter Nights"/data/nwn_base.key ${dst}/
+nwn_key_unpack -f ~/.local/share/Steam/steamapps/common/"Neverwinter Nights"/data/nwn_retail.key ${dst}/
+
+find ${dst} -iname \*.2da -exec mv {} 2da/ \;
+find ${dst} -iname \*.nss -exec mv {} nss/ \;
+
+# The following has text visible in game: *.utc, *.utd, *.uti, *.utm, *.utp
+# The following has text only visible in toolset: *.ute, *.uts, *.utt, *.utw
+for ext in dlg utc utd ute uti utm utp uts utt utw ; do
+  echo info: Running nwn_gff on ${ext} files...
+  for i in ${dst}/*/*.${ext}; do
+    nwn_gff -p -i ${i} -o ${ext}/${i##*/}.json
+  done
+done
