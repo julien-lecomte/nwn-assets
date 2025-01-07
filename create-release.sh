@@ -27,4 +27,4 @@ for file in tlk/dialog_*.tlk.csv; do
   (set -x; nwn_tlk -i "${file}" -o ${tag}/${file%%.csv})
 done
 
-nwn_erf -c -f nwn_i18n.hak -e hak ${tag}
+nwn_erf -c -f nwn_i18n.hak -e hak -r2 ${tag}
