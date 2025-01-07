@@ -2,6 +2,10 @@
 
 Version: 88.8193.37-12
 
+This repository contains all the 2da, nss, dlg, and blueprint assets of the Neverwinter Nights game.
+
+It is capable of creating a hak with the hardcoded translations of the blueprints and dialogs.  
+
 ## Usage
 
 The following repository uses shell script and python to generate translations.

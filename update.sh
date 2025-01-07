@@ -19,6 +19,9 @@ for i in "${src}"/lang/*/data/dialog.tlk ; do
   (set -x; nwn_tlk -i "$i" -o tlk/dialog_${lang}.tlk.csv)
   (set -x; nwn_tlk -p -i "$i" -o tlk/dialog_${lang}.tlk.json)
 done
+# Overwrite Polish with the correct code page
+(set -x; nwn_tlk -p -i "$i" --nwn-encoding cp1250 -o tlk/dialog_${lang}.tlk.json)
+(set -x; nwn_tlk -p -i "$i" --nwn-encoding cp1250 -o tlk/dialog_${lang}.tlk.csv)
 
 dst=$(mktemp -d --tmpdir nwn.XXXXX)
 nwn_key_unpack -f "${src}"/data/nwn_base.key ${dst}/
