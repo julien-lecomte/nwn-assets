@@ -2,10 +2,10 @@
 
 set -eu
 
-export PATH=./bin:"${PATH}"
+export PATH="${PATH}:./bin"
 export PS4=""
 
-(./translate.py 3>&2 2>&1 1>&3) | tee translate.log
+(./bin/translate.py 3>&2 2>&1 1>&3) | tee translate.log
 
 tag=$(git for-each-ref refs/tags --sort=-taggerdate --format='%(refname)' --count=1)
 tag=${tag##*/}
@@ -28,3 +28,11 @@ for file in tlk/dialog_*.tlk.csv; do
 done
 
 nwn_erf -c -f nwn_i18n.hak -e hak -r2 ${tag}
+
+# Create a test hak
+for file in test/test_*.tlk.csv; do
+  (set -x; nwn_tlk -i "${file}" -o ${file%%.csv})
+done
+(set -x; nwn_erf -c -f nwn_i18n_test.hak -e hak -r2 test/*tlk)
+
+./bin/restore.sh

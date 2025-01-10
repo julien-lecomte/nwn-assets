@@ -16,12 +16,12 @@ find ut* -mindepth 1 -maxdepth 1 -type f -iname \*.ut\?.json -delete
 for i in "${src}"/lang/*/data/dialog.tlk ; do
   lang=${i#*lang/}
   lang=${lang%/data*}
-  (set -x; nwn_tlk -i "$i" -o tlk/dialog_${lang}.tlk.csv)
-  (set -x; nwn_tlk -p -i "$i" -o tlk/dialog_${lang}.tlk.json)
+  (set -x; nwn_tlk --nwn-encoding windows-1252 -i "$i" -o tlk/dialog_${lang}.tlk.csv)
+  (set -x; nwn_tlk --nwn-encoding windows-1252 -p -i "$i" -o tlk/dialog_${lang}.tlk.json)
 done
-# Overwrite Polish with the correct code page
-(set -x; nwn_tlk -p -i "$i" --nwn-encoding cp1250 -o tlk/dialog_${lang}.tlk.json)
-(set -x; nwn_tlk -p -i "$i" --nwn-encoding cp1250 -o tlk/dialog_${lang}.tlk.csv)
+# Polish uses windows-1250 (and not windows-1252 nor windows-1257)
+(set -x; nwn_tlk -p -i "$i" --nwn-encoding windows-1250 -o tlk/dialog_${lang}.tlk.json)
+(set -x; nwn_tlk -p -i "$i" --nwn-encoding windows-1250 -o tlk/dialog_${lang}.tlk.csv)
 
 dst=$(mktemp -d --tmpdir nwn.XXXXX)
 nwn_key_unpack -f "${src}"/data/nwn_base.key ${dst}/

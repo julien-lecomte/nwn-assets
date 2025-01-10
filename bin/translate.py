@@ -7,6 +7,7 @@ import functools
 import json
 import os
 import sys
+import unidecode
 
 from boltons import iterutils
 
@@ -72,7 +73,7 @@ def translate_key(path, key, value, filepath):
     cexoloc["4"] = translations["de"][strref]
     cexoloc["6"] = translations["it"][strref]
     cexoloc["8"] = translations["es"][strref]
-    cexoloc["10"] = translations["pl"][strref]
+    cexoloc["10"] = unidecode.unidecode(translations["pl"][strref])
     return value
 
 

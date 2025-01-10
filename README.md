@@ -4,7 +4,9 @@ Version: 88.8193.37-12
 
 This repository contains all the 2da, nss, dlg, and blueprint assets of the Neverwinter Nights game.
 
-It is capable of creating a hak with the hardcoded translations of the blueprints and dialogs.  
+It is capable of creating a hak with the hardcoded translations of the blueprints and dialogs.
+
+For Polish, and because of different codepages, the diacritics are removed.
 
 ## Usage
 
@@ -13,9 +15,9 @@ The following repository uses shell script and python to generate translations.
 In order to update the repository to your NWN version, run the following, optionally passing the path of your `Neverwinter Nights`:
 
 ~~~
-./update.sh
+./bin/update-from-nwn-directory
 # or
-./update.sh "$HOME/Neverwinter Nights"
+./bin/update-from-nwn-directory "$HOME/Neverwinter Nights"
 ~~~ 
 
 In order add all translations, run the translate script after having created a python virtual environment:
@@ -33,6 +35,10 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # Run translations script
-./translate.py
+./bin/translate.py
 ~~~
 
+In order to create the hak files:
+~~~
+./bin/create-hak.sh
+~~~
