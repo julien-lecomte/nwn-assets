@@ -1,6 +1,6 @@
 # NWN assets
 
-Version: 88.8193.37-12
+Version: 88.8193.37-15
 
 This repository contains all the 2da, nss, dlg, and blueprint assets of the Neverwinter Nights game.
 
@@ -20,7 +20,7 @@ In order to update the repository to your NWN version, run the following, option
 ./bin/update-from-nwn-directory "$HOME/Neverwinter Nights"
 ~~~ 
 
-In order add all translations, run the translate script after having created a python virtual environment:
+In order to add all translations, run the translate script after having created a python virtual environment:
 
 ~~~
 # Note: python3 may be called python on some systems

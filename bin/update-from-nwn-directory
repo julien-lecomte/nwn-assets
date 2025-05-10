@@ -25,7 +25,9 @@ done
 
 dst=$(mktemp -d --tmpdir nwn.XXXXX)
 nwn_key_unpack -f "${src}"/data/nwn_base.key ${dst}/
-nwn_key_unpack -f "${src}"/data/nwn_retail.key ${dst}/
+if test -f "${src}"/data/nwn_retail.key; then
+  nwn_key_unpack -f "${src}"/data/nwn_retail.key ${dst}/
+fi
 
 find ${dst} -iname \*.2da -exec mv {} 2da/ \;
 find ${dst} -iname \*.nss -exec mv {} nss/ \;

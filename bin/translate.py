@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 
+import argparse
 import copy
 import functools
 import json
@@ -108,10 +109,9 @@ def translate_file(filepath):
         with open(filepath, mode="w", encoding="UTF-8") as fd:
             data = fd.write(json.dumps(data, indent=2))
 
-
-def get_files():
+def get_files(directory):
     retval = []
-    for root, dirnames, files in os.walk("."):
+    for root, dirnames, files in os.walk(directory):
         # To edit dirnames inplace, calculate what we want to keep, then
         # add it to the empty list
         explore = [x for x in dirnames if x.startswith("ut") or x == "dlg"]
@@ -134,8 +134,12 @@ def get_translations():
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('directory', type=str, nargs='?', default=".")
+    args = parser.parse_args(sys.argv[1:])
+
     _ = get_translations()
-    files = get_files()
+    files = get_files(args.directory)
     for file in files:
         translate_file(file)
 
