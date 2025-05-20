@@ -8,6 +8,7 @@ It is capable of creating a hak with the hardcoded translations of the blueprint
 
 For Polish, and because of different codepages, the diacritics are removed.
 
+
 ## Usage
 
 The following repository uses shell script and python to generate translations.
