@@ -127,7 +127,7 @@ def get_translations():
     print("info: reading TLK files...", file=sys.stderr)
     retval = {}
     for lang in ["en", "es", "fr", "it", "pl", "de"]:
-        with open(f"tlk/dialog_{lang}.tlk.json", encoding="UTF-8", mode="r") as fd:
+        with open(f"data/tlk/dialog_{lang}.tlk.json", encoding="UTF-8", mode="r") as fd:
             data = json.loads(fd.read())
             retval[lang] = {x["id"]: x["text"] for x in data["entries"]}
     return retval
@@ -135,7 +135,7 @@ def get_translations():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('directory', type=str, nargs='?', default=".")
+    parser.add_argument('directory', type=str, nargs='?', default="data")
     args = parser.parse_args(sys.argv[1:])
 
     _ = get_translations()

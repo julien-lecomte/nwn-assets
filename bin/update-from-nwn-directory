@@ -8,20 +8,20 @@ export PATH=./bin:"${PATH}"
 export PS4=""
 
 # In case files are removed from one version to another, clear all files
-find 2da -mindepth 1 -maxdepth 1 -type f -iname \*.2da       -delete
-find dlg -mindepth 1 -maxdepth 1 -type f -iname \*.dlg.json  -delete
-find nss -mindepth 1 -maxdepth 1 -type f -iname \*.nss       -delete
-find ut* -mindepth 1 -maxdepth 1 -type f -iname \*.ut\?.json -delete
+find data/2da -mindepth 1 -maxdepth 1 -type f -iname \*.2da       -delete
+find data/dlg -mindepth 1 -maxdepth 1 -type f -iname \*.dlg.json  -delete
+find data/nss -mindepth 1 -maxdepth 1 -type f -iname \*.nss       -delete
+find data/ut* -mindepth 1 -maxdepth 1 -type f -iname \*.ut\?.json -delete
 
 for i in "${src}"/lang/*/data/dialog.tlk ; do
   lang=${i#*lang/}
   lang=${lang%/data*}
-  (set -x; nwn_tlk --nwn-encoding windows-1252 -i "$i" -o tlk/dialog_${lang}.tlk.csv)
-  (set -x; nwn_tlk --nwn-encoding windows-1252 -p -i "$i" -o tlk/dialog_${lang}.tlk.json)
+  (set -x; nwn_tlk --nwn-encoding windows-1252    -i "$i" -o data/tlk/dialog_${lang}.tlk.csv)
+  (set -x; nwn_tlk --nwn-encoding windows-1252 -p -i "$i" -o data/tlk/dialog_${lang}.tlk.json)
 done
 # Polish uses windows-1250 (and not windows-1252 nor windows-1257)
-(set -x; nwn_tlk -p -i "${src}"/lang/pl/data/dialog.tlk --nwn-encoding windows-1250 -o tlk/dialog_pl.tlk.json)
-(set -x; nwn_tlk -p -i "${src}"/lang/pl/data/dialog.tlk --nwn-encoding windows-1250 -o tlk/dialog_pl.tlk.csv)
+(set -x; nwn_tlk -p -i "${src}"/lang/pl/data/dialog.tlk --nwn-encoding windows-1250 -o data/tlk/dialog_pl.tlk.json)
+(set -x; nwn_tlk -p -i "${src}"/lang/pl/data/dialog.tlk --nwn-encoding windows-1250 -o data/tlk/dialog_pl.tlk.csv)
 
 dst=$(mktemp -d --tmpdir nwn.XXXXX)
 nwn_key_unpack -f "${src}"/data/nwn_base.key ${dst}/
@@ -29,14 +29,14 @@ if test -f "${src}"/data/nwn_retail.key; then
   nwn_key_unpack -f "${src}"/data/nwn_retail.key ${dst}/
 fi
 
-find ${dst} -iname \*.2da -exec mv {} 2da/ \;
-find ${dst} -iname \*.nss -exec mv {} nss/ \;
+find ${dst} -iname \*.2da -exec mv {} data/2da/ \;
+find ${dst} -iname \*.nss -exec mv {} data/nss/ \;
 
 # The following has text visible in game: *.utc, *.utd, *.uti, *.utm, *.utp
 # The following has text only visible in toolset: *.ute, *.uts, *.utt, *.utw
 for ext in dlg utc utd ute uti utm utp uts utt utw ; do
   echo info: Running nwn_gff on ${ext} files...
   for i in ${dst}/*/*.${ext}; do
-    nwn_gff -p -i ${i} -o ${ext}/${i##*/}.json
+    nwn_gff -p -i ${i} -o data/${ext}/${i##*/}.json
   done
 done
