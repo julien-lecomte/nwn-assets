@@ -1,0 +1,11 @@
+{ "name": "nwn", "fs_paths":
+[
+  {
+    "name": "nss",
+    "path": "/data/nss",
+    "metadata": {
+      "url-pattern": "https://gitlab.com/nwn.ovh/assets/-/blob/main/nss/{path}?ref_type=heads#L{lno}"
+    }
+  }
+]
+}

@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -eu -o pipefail
+export frontend="livegrep-frontend"
+export backend="livegrep-backend"
+
+if ! docker network ls | grep -q " livegrep "; then
+  docker network create livegrep
+fi
+
+docker stop ${frontend} || true
+docker stop ${backend}  || true
+
+docker rm ${frontend} || true
+docker rm ${backend}  || true
+
+# generate index
+mkdir -pv livegrep
+cp -v livegrep.json livegrep/
+cp -R nss           livegrep/
+docker run --rm -v $(pwd)/livegrep:/data livegrep/indexer /livegrep/bin/codesearch -index_only -dump_index /data/index.idx /data/livegrep.json
+
+docker run -d --restart=unless-stopped -v $(pwd)/livegrep:/data --network livegrep --name ${backend}  livegrep/base /livegrep/bin/codesearch -load_index /data/index.idx -grpc 0.0.0.0:9999
+docker run -d --restart=unless-stopped --publish 8910:8910      --network livegrep --name ${frontend} livegrep/base /livegrep/bin/livegrep   -docroot /livegrep/web -listen=0.0.0.0:8910 --connect ${backend}:9999
+echo "http://localhost:8910"
