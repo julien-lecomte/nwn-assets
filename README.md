@@ -1,6 +1,6 @@
 # NWN assets
 
-Version: 88.8193.37-15
+Version: 89.8193.37-15
 
 This repository contains all the 2da, nss, dlg, and blueprint assets of the Neverwinter Nights game.
 
