@@ -21,6 +21,9 @@ In order to update the repository to your NWN version, run the following, option
 ./bin/update-from-nwn-directory "$HOME/Neverwinter Nights"
 ~~~ 
 
+Issues may arise if using a directory with spaces. In such a case, using symlinks can solve the issues.
+
+
 In order to add all translations, run the translate script after having created a python virtual environment:
 
 ~~~
