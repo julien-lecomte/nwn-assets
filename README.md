@@ -46,3 +46,9 @@ In order to create the hak files:
 ~~~
 ./bin/create-hak.sh
 ~~~
+
+# License
+
+This project itself is MIT licensed.
+
+All files extracted and grouped into the `data` folder are copyright Beamdog. Neverwinter Nights: Enhanced Edition is copyright Beamdog.
